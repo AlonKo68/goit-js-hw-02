@@ -1,7 +1,7 @@
 // Задача 2. Форматування повідомлення
 function formatMessage(message, maxLength) {
     const newMessage = message.slice(0, maxLength);
-    if (maxLength <= 22) {
+    if (message.length > maxLength) {
         return `"${newMessage}..."`;
     } else {
         return `"${newMessage}"`;
